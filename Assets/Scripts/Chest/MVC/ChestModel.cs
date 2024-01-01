@@ -1,26 +1,23 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace ChestSystem
 {
-    public class ChestModel : MonoBehaviour
+    public class ChestModel
     {
-        private ChestController ChestController;
-        private ChestScriptableObject ChestScriptable;
+        private ChestController chestController;
+        public ChestScriptableObject chestScriptable;
         public float timeToUnlockInSeconds;
 
-        public ChestModel(ChestController chestController,ChestScriptableObject chestScriptableObject)
+        public ChestModel(ChestController chestController, ChestScriptableObject chestScriptableObject)
         {
-            this.ChestController = chestController;
+            this.chestController = chestController;
             ResetChestData(chestScriptableObject);
         }
 
         public void ResetChestData(ChestScriptableObject chestScriptableObject)
         {
-            this.ChestScriptable = chestScriptableObject;
-            timeToUnlockInSeconds = chestScriptableObject.timeInMinutes * 60;
+            this.chestScriptable = chestScriptableObject;
+            timeToUnlockInSeconds = chestScriptable.timeInMinutes * 60;
         }
     }
 }
