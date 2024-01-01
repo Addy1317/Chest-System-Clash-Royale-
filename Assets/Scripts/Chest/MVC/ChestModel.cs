@@ -1,18 +1,26 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChestModel : MonoBehaviour
+namespace ChestSystem
 {
-    // Start is called before the first frame update
-    void Start()
+    public class ChestModel : MonoBehaviour
     {
-        
-    }
+        private ChestController ChestController;
+        private ChestScriptableObject ChestScriptable;
+        public float timeToUnlockInSeconds;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public ChestModel(ChestController chestController,ChestScriptableObject chestScriptableObject)
+        {
+            this.ChestController = chestController;
+            ResetChestData(chestScriptableObject);
+        }
+
+        public void ResetChestData(ChestScriptableObject chestScriptableObject)
+        {
+            this.ChestScriptable = chestScriptableObject;
+            timeToUnlockInSeconds = chestScriptableObject.timeInMinutes * 60;
+        }
     }
 }

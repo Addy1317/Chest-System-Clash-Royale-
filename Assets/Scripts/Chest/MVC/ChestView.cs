@@ -1,18 +1,43 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ChestView : MonoBehaviour
+namespace ChestSystem
 {
-    // Start is called before the first frame update
-    void Start()
+    public class ChestView : MonoBehaviour
     {
-        
-    }
+        private ChestController chestController;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        [SerializeField]
+        private Image chestImage;
+
+        [SerializeField]
+        private GameObject chestVisual;
+
+        [SerializeField]
+        private private ChestStateMatchineBehaviour chestStateMachine;
+
+        public void SetChestController(ChestController chestController)
+        {
+            this.chestController = chestController;
+        }
+
+        public void EnableChest(Sprite sprite)
+        {
+            this.chestImage.sprite = sprite;
+            chestVisual.SetActive(true);
+            changeChestState(StateOfChest.Locked);
+        }
+
+        public void Disable()
+        {
+            chestVisual.SetActive(false);
+        }
+
+        public void ChangeChestState(StateOfChest newState)
+        {
+            chestStateMachine.ChangeChestState(newState, this.chestController);
+        }
     }
 }
