@@ -16,7 +16,7 @@ namespace ChestSystem
 
         public void Register<T>(TypesOfServices type, T service) where T : IGameService
         {
-            if(!services.ContainsKey(type))
+            if (!services.ContainsKey(type))
             {
                 services.Add(type, service);
             }
@@ -24,11 +24,12 @@ namespace ChestSystem
 
         public T GetService<T>(TypesOfServices type) where T : class, IGameService
         {
-            if(!services.ContainsKey(type))
+            if (!services.ContainsKey(type))
             {
-                Debug.LogError("Services Does not Exixts");
+                Debug.LogError("Service Does not Exists: ");
                 return null;
             }
+
             return (T)services[type];
         }
     }

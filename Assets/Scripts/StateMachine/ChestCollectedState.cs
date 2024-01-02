@@ -31,7 +31,7 @@ namespace ChestSystem
 
         private void ReturnTheChestToPool()
         {
-            throw new NotImplementedException();
+            ServiceLocator.Instance.GetService<ChestSpawnerService>(TypesOfServices.ChestSpawner).ReturnChestController(chestController);
         }
     }
 }
