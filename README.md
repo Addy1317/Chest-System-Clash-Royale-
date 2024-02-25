@@ -22,3 +22,14 @@ Our Chest System encapsulates a myriad of functionalities, meticulously designed
 Conclusion:
 
 In summary, our project represents a testament to the synergy between innovation and emulation within the realm of game development. By leveraging Unity Game Engine and C#, alongside a judicious selection of design patterns and architectural paradigms, we have endeavored to encapsulate the essence of Clash Royale’s Chest System while imbuing it with our unique creative flair. As we continue to iterate and refine our project, we remain steadfast in our commitment to delivering compelling and immersive gameplay experiences to our players.
+
+GamePlay Video:
+
+https://github.com/Addy1317/Chest-System-Clash-Royale-/assets/92723657/1dbf5db3-9725-4250-b5e9-aa193aed70e1
+
+
+
+![Screenshot (116)](https://github.com/Addy1317/Chest-System-Clash-Royale-/assets/92723657/b2cf0db0-6ab0-4fb8-b1fb-c9b901252bdc)
+
+![Screenshot (117)](https://github.com/Addy1317/Chest-System-Clash-Royale-/assets/92723657/93cff9d3-052a-4c64-b402-5906541d135b)
+
