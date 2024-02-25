@@ -20,5 +20,4 @@ Functionality Overview:
 Our Chest System encapsulates a myriad of functionalities, meticulously designed to emulate the strategic depth and anticipation inherent in Clash Royale’s chest progression. Players are presented with a diverse array of chests, each imbued with distinct rarity and rewards, fostering anticipation and incentivizing continued engagement. Through meticulous utilization of design patterns and architectural paradigms, our system seamlessly orchestrates chest generation, opening animations, and reward allocation, delivering a captivating and immersive gameplay experience.
 
 Conclusion:
-
 In summary, our project represents a testament to the synergy between innovation and emulation within the realm of game development. By leveraging Unity Game Engine and C#, alongside a judicious selection of design patterns and architectural paradigms, we have endeavored to encapsulate the essence of Clash Royale’s Chest System while imbuing it with our unique creative flair. As we continue to iterate and refine our project, we remain steadfast in our commitment to delivering compelling and immersive gameplay experiences to our players.
